@@ -2,18 +2,18 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=cascoda-sdk
+PKG_NAME:=cascoda-sdk_miketest
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/Cascoda/cascoda-sdk.git
-PKG_SOURCE_DATE:=2020-03-09
-PKG_SOURCE_VERSION:=71cf3464739e5ec8a1560d6c0f746e2be11745d5
+PKG_SOURCE_DATE:=2022-06-03
+PKG_SOURCE_VERSION:=12ef831424f6f9fab692b3928e3d5bd5e92beb96
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_SOURCE_VERSION).tar.gz
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_SOURCE_VERSION)
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_SOURCE_VERSION)
-PKG_MIRROR_HASH:=144cc59bcc5798390217fe88a5e0fc96ea12cea39690fd1c29e144fd126d9d46
+#PKG_MIRROR_HASH:=144cc59bcc5798390217fe88a5e0fc96ea12cea39690fd1c29e144fd126d9d46
 
 PKG_MAINTAINER:=Elie El Khoury <e.khoury@cascoda.com>, Ciaran Woodward <c.woodward@cascoda.com>
 
@@ -61,3 +61,4 @@ define Package/cascoda-sdk/install
 endef
 
 $(eval $(call BuildPackage,cascoda-sdk))
+
