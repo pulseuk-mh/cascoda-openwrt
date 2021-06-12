@@ -35,7 +35,7 @@ Exit and save configuration.
 
 After building and flashing the image to your device operating on OpenWrt, the following Cascoda applications will be available:
 <pre>	
-  ca-chillictl		- A Chili control application for listing and flashing connected Chili devices.
+  	ca-chillictl		- A Chili control application for listing and flashing connected Chili devices.
 	ca-ot-eink-server	- A server that transmits image files, to be used with the ot-sed-eink-freertos embedded target. Requires a mac-dongle Chili to be connected to the host.
 	ca-ot-sensordemo-server	- Interfaces with the Cascoda sensordemo application layer. It prints the sensor readings it receives from the network. Requires a mac-dongle Chili to be connected to the host.
 	ca-serial-adapter	- A useful program for interacting with a serial application running on baremetal.
